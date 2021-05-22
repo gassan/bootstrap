@@ -1,0 +1,29 @@
+.twitter-typeahead {
+  @extend .me-sm-2;
+
+  .tt-menu {
+    @extend .dropdown-menu;
+  }
+
+  .tt-suggestion {
+    @extend .dropdown-item;
+  }
+
+  //.tt-suggestion.tt-cursor { TODO fix it
+  //  @extend .dropdown-item.active;
+  //}
+
+  .input-group & {
+    position: relative;
+    display: flex; // !important;
+    flex: 1 1 auto;
+    align-items: center;
+    width: 1%;
+
+    .tt-menu,
+    .tt-hint,
+    .tt-input {
+      width: 100%;
+    }
+  }
+}
